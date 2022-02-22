@@ -7,19 +7,38 @@
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body onload="getText()">
     <div class="container">
+      <h1 id="chart-name"></h1>
       <div class="canvas-item">
         <canvas id="canvas"></canvas>
       </div>
       <div class="select-item">
         <label for="mode">Choose your mode:</label>
-      <select name="mode" id="mode" onchange="changeMode(this)">
-        <option value="1">Without User interection</option>
-        <option value="2">With User interection</option>
+      <select class="change" name="mode" id="mode" onchange="changeMode(this)">
+        <option value="1">Without User Interection</option>
+        <option value="2">With User Interection</option>
       </select>
       </div>
-      
+      <div>
+        <form id="form">
+          <div class="text-box">
+            <label for="axis-name">Axis Name:</label>
+          <input class="change" id="axis-name" type="text" name="axis-name">
+          </div>
+          <div class="text-box">
+            <label for="answer-dots">Answer Dots:</label>
+          <input class="change" id="answer-dots" type="text" name="answer-dots">
+          </div>
+          <div class="text-box">
+            <label for="division">Division:</label>
+            <input class="change" id="division" type="text" name="division">
+          </div>
+          <div class="text-box">
+            <input class="btn-submit" type="button" onclick="getText()" value="submit">
+          </div>
+        </form>
+      </div>
     </div>
 
     <script src="main.js"></script>

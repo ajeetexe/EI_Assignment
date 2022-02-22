@@ -1,5 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .container{
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -8,23 +12,46 @@
 
 #canvas{
     border: 2px solid black;
-    /* background-color: rgba(127, 255, 212, 0.301); */
+    /* background-color: lightcyan; */
     color: black;
     border-radius: 5px;
     
 }
 
-#mode{
-    height: fit-content;
-    padding: 5px;
-    border-radius: 5px;
-}
-
 .canvas-item{
-margin-top: 40px;
+    margin-top: 10px;
+    }
+
+#mode{
+height: fit-content;
 }
 
 .select-item{
-    margin: 20px;
+    position: relative;
+    width: auto;
+    margin-top: 10px;
 }
 
+.change{
+    height: 20px;
+    padding: 5px 0;
+    border-radius: 5px;
+    width: 60vh;
+    border: 1px solid black;
+    
+}
+
+.text-box{
+    position: relative;
+    width: auto;
+    margin-top: 10px;
+}
+
+.btn-submit{
+    background-color: #4BB543;
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
